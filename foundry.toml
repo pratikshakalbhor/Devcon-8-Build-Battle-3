@@ -9,6 +9,8 @@ optimizer_runs = 200
 fs_permissions = [{ access = "read", path = "./test/fixtures" }]
 # SemaphoreVerifierKeyPts.sol is generated and large; silence the cosmetic warnings.
 ignored_error_codes = [3860]
+# Only use our own remappings.txt (auto-detection mangles the `.sol` directory name).
+auto_detect_remappings = false
 
 [fmt]
 line_length = 120

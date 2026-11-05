@@ -1,27 +1,25 @@
 {
-  "name": "devcon-8-build-battle-3",
-  "version": "1.0.0",
-  "description": "**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@semaphore-protocol/contracts": "^4.14.5",
-    "@semaphore-protocol/core": "^4.14.5",
-    "viem": "^2.57.16"
-  },
-  "devDependencies": {
-    "@types/node": "^26.6.6",
-    "tsx": "^4.23.15",
-    "typescript": "^7.0.2",
-    "vitest": "^5.1.0"
-  }
+    "name": "anonvote",
+    "version": "1.0.0",
+    "private": true,
+    "description": "AnonVote - anonymous, once-per-nurse ballots on Semaphore V4 (Devcon 8 Build Battle 3, Problem 1)",
+    "type": "module",
+    "license": "MIT",
+    "scripts": {
+        "build": "tsc --noEmit",
+        "fixtures": "tsx scripts/generate-fixtures.ts",
+        "test:client": "vitest run",
+        "test:contracts": "forge test -vv"
+    },
+    "dependencies": {
+        "@semaphore-protocol/contracts": "4.14.5",
+        "@semaphore-protocol/core": "4.14.5",
+        "viem": "2.57.16"
+    },
+    "devDependencies": {
+        "@types/node": "26.6.6",
+        "tsx": "4.23.15",
+        "typescript": "7.0.2",
+        "vitest": "5.1.0"
+    }
 }

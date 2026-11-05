@@ -1,3 +1,6 @@
 forge-std/=lib/forge-std/src/
 @semaphore-protocol/=node_modules/@semaphore-protocol/
-@zk-kit/lean-imt.sol/=node_modules/@zk-kit/lean-imt.sol/
+@zk-kit/lean-imt.sol/InternalLeanIMT.sol=node_modules/@zk-kit/lean-imt.sol/InternalLeanIMT.sol
+@zk-kit/lean-imt.sol/Constants.sol=node_modules/@zk-kit/lean-imt.sol/Constants.sol
+@zk-kit/lean-imt.sol/LeanIMT.sol=node_modules/@zk-kit/lean-imt.sol/LeanIMT.sol
+poseidon-solidity/=node_modules/poseidon-solidity/
